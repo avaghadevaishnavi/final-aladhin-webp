@@ -1,0 +1,321 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: #fff;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* .navbar {
+  align-items: flex-start;  
+  display: flex;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  justify-content: space-between;
+  height: 60px;
+  padding: 10px 40px;
+  background: linear-gradient(to right, #ffa500, #b22222);
+  z-index: 10;
+  position: relative;
+}
+
+.logo {
+  height: 220px;
+  margin-top: -3px;
+  margin-left: -100px;
+  position: relative;
+  z-index: 10;
+} */
+
+/* .menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu a {
+  margin-left: 30px;
+  color: white;
+  text-decoration: none;
+  font-weight: 'semi-bold';
+  font-size: 20px;
+} */
+ /* .menu {
+  display: flex;
+  align-items: center;
+  height: 60px; 
+}
+
+.menu a {
+  margin-left: 30px;
+  color: white;
+  text-decoration: none;
+  font-family: 'Outfit', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+} */
+
+.menu a:hover {
+  background-color: #ff6600;
+}
+
+
+/* Page Container */
+.container {
+  padding: 10px 30px;
+}
+
+/* about-section */
+.about-section {
+  padding: 40px 20px;
+  /* text-align: center; */
+  margin-bottom: 20px;
+  /* background-color: #fff; */
+}
+
+.about-section h2 {
+  color: #ff944d;
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+/* Cards & Layout */
+.about-section-row {
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  height: 110px;
+  width: 100%;
+}
+
+.card {
+  flex: 1;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: white;
+}
+
+.side-img {
+  flex: 1;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.orange-card {
+  background-color: #ff944d;
+}
+
+.red-card {
+  background: linear-gradient(to right, #ffa500, #b22222);
+}
+
+.testimonial-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.testimonial-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;     
+  justify-content: center; 
+  gap: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  background-color: #ff7a39; 
+}
+
+.testimonial-card img {
+  width: 190px;
+  height: 90px;
+  border-radius: 50%;      
+  object-fit: cover;
+}
+
+
+
+
+/* .testimonial-row {
+  display: flex;
+  gap: 20px; 
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.testimonial-card {
+  flex: 0 0 350px;
+  width: 400px;
+  height: 280px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: white; 
+  box-shadow: 0 6px 15px rgba(255, 122, 57, 0.2); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 25px rgba(255, 122, 57, 0.4); 
+}
+
+.testimonial-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+} */
+
+
+
+
+/* Responsive - Tablets */
+@media (max-width: 1024px) {
+  .about-section-row {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
+
+  .card,
+  .side-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .side-img {
+    margin-top: 10px;
+  }
+
+  .testimonial-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .testimonial-card img {
+    margin: 0 auto;
+  }
+}
+
+/* Responsive - Mobile */
+@media (max-width: 480px) {
+  /* .navbar {
+    padding: 15px;
+  }
+
+  .logo {
+    height: 100px;
+    margin-left: 0;
+  }
+
+  .menu a {
+    font-size: 16px;
+    margin: 5px 10px;
+  } */
+
+  .about-section h2 {
+    font-size: 1.5rem;
+    text-align: center;
+   
+  }
+
+  .card {
+    font-size: 0.95rem;
+    padding: 12px;
+  }
+
+  .testimonial-card {
+    font-size: 0.9rem;
+  }
+
+  .container {
+    padding: 10px 15px;
+  }
+}
+
+
+
+/* Slide In From Right on load */
+/* @keyframes slideFromRight {
+  0% {
+    transform: translateX(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Slide Out To Left after 4s */
+/* @keyframes slideLeft {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-150%);
+    opacity: 0;
+  }
+} */
+
+/* Animate Orange Cards */
+/* .animate-orange {
+  animation: 
+    slideFromRight 0.8s ease-out forwards,
+    slideLeft 1s ease forwards 4s;
+} */ 
+
+@keyframes slideInStay {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateX(60px);
+  transition: all 0.6s ease-out;
+}
+
+.animate-on-scroll.visible {
+  animation: slideInStay 0.8s ease-out forwards;
+}
+
+
+
+@media (max-width: 480px) {
+  .about-section {
+    padding: 10px 15px 30px 15px; /* top, right, bottom, left */
+  }
+}
+

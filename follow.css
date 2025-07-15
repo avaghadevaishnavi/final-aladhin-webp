@@ -1,0 +1,251 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: #fff;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* .navbar {
+  align-items: flex-start;  
+  display: flex;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  justify-content: space-between;
+  height: 60px;
+  padding: 10px 40px;
+  background: linear-gradient(to right, #ffa500, #b22222);
+  z-index: 10;
+  position: relative;
+}
+
+
+.logo {
+  height: 220px;
+  margin-top: -3px;
+  margin-left: -100px;
+  position: relative;
+  z-index: 10;
+} */
+
+/* .menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu a {
+  margin-left: 30px;
+  color: white;
+  text-decoration: none;
+  font-weight: 'semi-bold';
+  font-size: 20px;
+} */
+ /* .menu {
+  display: flex;
+  align-items: center;
+  height: 60px; /* match navbar height */
+/* }
+
+.menu a {
+  margin-left: 30px;
+  color: white;
+  text-decoration: none;
+  font-family: 'Outfit', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* make link fill full navbar height */
+  /* padding: 0 20px;
+  box-sizing: border-box;
+}   */
+
+.menu a:hover
+ {
+  background-color: #ff6600;
+}
+
+
+
+/* .menu a:hover,
+.menu a.active {
+  background-color: #ff6600;
+} */
+
+/* Half-screen Image */
+.half-screen-image {
+  height: 45vh; /* Half of the viewport height */
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Page Content */
+.content {
+  padding: 20px 40px;
+  font-size: 1.2rem;
+}
+
+.footer {
+  background-color: #0b1230;
+  color: white;
+  padding: 20px; 
+  /* position: absolute; */
+  /* position: fixed;
+  /* padding: 50px; */ 
+
+}
+/* .footer::after{
+  content: "";
+  display: table;
+  clear: both;
+} */
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 15px 0; 
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px; 
+}
+
+.footer-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-links li a:hover {
+  color: #ff6600;
+}
+
+.footer-images {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding-top: 20px; /* reduced from 30px */
+  
+}
+
+.footer-images img {
+  width: 190px;
+  height: 160px;
+  object-fit: contain;
+  border-radius: 100px; /* Added smooth corner rounding */
+}
+
+.footer-links li:nth-child(4) a,
+.footer-links li:nth-child(5) a {
+  text-decoration: underline;
+}
+.footer-links li a i {
+  background-color: white;
+  color: #ff7a39; /* Orange icon color */
+  border-radius: 50%;
+  padding: 8px;
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 14px;
+  font-size: 14px;
+}
+@media (max-width: 480px) {
+ /* .navbar {
+    padding: 15px;
+  }
+
+  .logo {
+    height: 100px;
+    margin-left: 0;
+  }
+
+  .menu a {
+    font-size: 16px;
+    margin: 5px 10px;
+  } */
+
+}
+
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 25px 20px;
+    text-align: left;
+    width: 100%;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .footer-links {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .footer-links li {
+    width: 100%;
+  }
+
+  .footer-links li a {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    gap: 10px;
+    word-break: break-word;
+  }
+
+  .footer-links li a i {
+    background-color: white;
+    color: #ff7a39;
+    border-radius: 50%;
+    padding: 6px;
+    font-size: 14px;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    line-height: 16px;
+    min-width: 28px;
+  }
+
+  .footer-images {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .footer-images img {
+    width: 130px;
+    height: auto;
+    border-radius: 20px;
+  }
+}

@@ -1,0 +1,235 @@
+/* =================== Base Styles =================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: #fff;
+  color: #333;
+  overflow-x: hidden;
+}
+
+.container {
+  padding: 10px 30px;
+}
+
+.section {
+  margin-bottom: 50px;
+}
+
+@media (max-width: 480px) {
+  .section {
+    margin-bottom: 10px;
+  }
+}
+
+.section h2 {
+  color: black;
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: 700;
+}
+
+/* =================== App Showcase Section =================== */
+.app-showcase {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.app-text {
+  flex: 1;
+  background-color: #ff7a39;
+  padding: 25px;
+  border-radius: 12px;
+  color: white;
+  font-size: 1rem;
+  line-height: 1.7;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.app-text ul {
+  margin-top: 12px;
+  padding-left: 20px;
+}
+
+.app-text li {
+  list-style: disc;
+  margin-bottom: 6px;
+}
+
+/* =================== Device Images Section =================== */
+/* .device-images {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 320px;
+  min-width: 320px;
+  gap: 16px;
+} */
+
+.device.delivery-boy {
+  position: relative;
+  object-fit: contain;
+  max-height: 280px;
+  width: auto;
+  border-radius: 20px;
+  z-index: 5;
+}
+
+/* Desktop Apply Button */
+/* .apply-button {
+  position: absolute;
+  bottom: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 600;
+  background-color: #2b82c9;
+  color: white;
+  padding: 20px 20px;
+  font-size: 1.3rem;
+  min-width: 260px;
+  border: none;
+  border-radius: 28px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  z-index: 10;
+} */
+ .device-images {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 260px; /* ↓ reduced height */
+  min-width: 320px;
+  gap: 16px;
+  margin-top: -20px; /* ↑ moved up */
+}
+
+.apply-button {
+  position: absolute;
+  bottom: -60px; /* ↑ move up from -100px */
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 600;
+  background-color: #2b82c9;
+  color: white;
+  padding: 10px 10px;
+  font-size: 1.3rem;
+  min-width: 300px;
+  border: none;
+  border-radius: 28px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  z-index: 10;
+}
+
+.vertical-separator {
+  width: 2px;
+  background-color: #000;
+  height: 400px;
+  align-self: center;
+  margin-left: 30px;
+  display: block; /* 👈 ensure visible */
+}
+
+
+
+
+/* =================== Responsive Styles =================== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .app-showcase {
+    flex-direction: column;
+  }
+
+  .device-images {
+    height: auto;
+    position: static;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .device {
+    position: relative;
+    max-height: 200px;
+  }
+}
+
+/* Phones ≤600px */
+@media (max-width: 600px) {
+  .device-images {
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .device.delivery-boy {
+    max-height: 200px;
+    width: 60%;
+  }
+
+  .apply-button {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transform: none;
+    margin-top: 16px;
+    padding: 16px 40px;
+    font-size: 1.1rem;
+    min-width: 200px;
+    border-radius: 20px;
+    display: block;
+    z-index: 1;
+  }
+}
+
+/* Very Small Phones */
+@media (max-width: 400px) {
+  .app-text {
+    width: 100%;
+    padding: 16px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .device.delivery-boy {
+    max-height: 180px;
+    width: 65%;
+  }
+
+  .apply-button {
+    font-size: 1rem;
+    padding: 12px 28px;
+    min-width: 180px;
+    border-radius: 20px;
+  }
+}
+.vertical-separator {
+  width: 2px;
+  background-color: #000;
+  height: 400px;
+  align-self: center;
+  margin-left: 30px;
+  display: block; /* 👈 Ensure it's shown */
+}
+/* Hide on small screens */
+@media (max-width: 768px) {
+  .vertical-separator {
+    display: none;
+  }
+}
