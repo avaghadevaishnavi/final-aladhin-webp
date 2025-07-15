@@ -889,12 +889,18 @@ body {
 
   
 
+
 @media (max-width: 768px) {
   .footer-image-wrapper .mobile-on-banner {
-    height: 400px;
-    bottom: -180px;
-    right: 62%;
-    border-radius: 200px; 
-    overflow: hidden;    }
+  height: 300px;
+  width: auto;
+  bottom: -150px;
+  right: 62%;
+  border-radius: 20px;
+  object-fit: cover;
+  display: block;
+  overflow: hidden;
+}
+
 }
 
