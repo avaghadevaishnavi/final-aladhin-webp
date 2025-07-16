@@ -756,7 +756,8 @@ body {
 @media (max-width: 768px) {
   .partner-card {
     width: 120px;
-    height: 180px;
+    height: 200px;
+    
   }
 
   .partners-section h2 {
@@ -764,7 +765,7 @@ body {
   }
 
   .partner-cta {
-    font-size: 16px;
+    font-size: 20px;
     padding: 0 10px;
   }
 }
