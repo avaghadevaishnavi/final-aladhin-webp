@@ -22,7 +22,7 @@ body {
 
 @media (max-width: 480px) {
   .section {
-    margin-bottom: 10px;
+    margin-bottom: -20px;
   }
 }
 
@@ -225,7 +225,7 @@ body {
   height: 400px;
   align-self: center;
   margin-left: 30px;
-  display: block; /* 👈 Ensure it's shown */
+  display: block; 
 }
 /* Hide on small screens */
 @media (max-width: 768px) {
