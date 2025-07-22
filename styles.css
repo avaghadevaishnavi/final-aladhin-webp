@@ -669,7 +669,7 @@ body {
     
   }
 }
-.restaurant-banner {
+/* .restaurant-banner {
   position: absolute;
   top: 100px; 
   right: -10px;
@@ -689,8 +689,8 @@ body {
     padding: 6px 12px;
     top: 30px;
     right: -5px;
-  }
-}
+  } */
+/* } */
 .easy-to-use {
   width: 100%;
   margin-top: 60px; /* Adjust spacing from above section */
@@ -749,6 +749,9 @@ body {
   z-index: 10;
 
 
+}
+.become-partner:hover{
+  background-color:#014f8e ;
 }
 
 .partner-cards {
