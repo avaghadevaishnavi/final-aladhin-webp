@@ -838,20 +838,57 @@ body {
   margin: 0 auto;
 }
 
-.testimonial-box {
+/* .testimonial-box {
   background-color: white;
   height: 200px;
   border-radius: 8px;
   opacity: 0;
   transform: translateY(40px);
   transition: all 0.4s ease;
+} */
+ .testimonial-box {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.4s ease;
 }
+
+.testimonial-photo {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1px;
+}
+
+.testimonial-author {
+  font-weight: bold;
+  font-size: 16px;
+  color: #ff7f45;
+  margin-bottom: 5px;
+}
+
+.testimonial-text {
+  font-size: 15px;
+  color: #333;
+  line-height: 1.7;
+}
+
 .testimonial-text {
   font-size: 15px;
   color: #333;
   font-weight: 500;
   line-height: 1.9;
-  margin-bottom: 12px;
+  margin-bottom: 2px;
   
 }
 
@@ -862,10 +899,7 @@ body {
   text-align: right;
   margin-right: 7px;
 }
-.testo-image{
-  width: 150px;
-  height: 200px;
-}
+
 /* Animated state */
 .testimonial-box.animate {
   animation: fadeUp 0.6s ease forwards;
@@ -898,6 +932,7 @@ body {
   }
 } */
  @media (max-width: 768px) {
+
   .testimonial-box {
     padding: 8px;
   }
@@ -912,10 +947,13 @@ body {
   height: 170px;
 }
 
-  .testimonial-author {
-    font-size: 14px;
-    margin-right: 5px;
+
+  .testimonial-photo {
+    height: 30px;
+    width: 30px;
+    
   }
+ 
 }
 
  @media (max-width: 1024px) {
@@ -932,7 +970,7 @@ body {
   }
 
   .testimonial-box {
-    height: 180px;
+    height: 200px;
   }
   
 
@@ -941,14 +979,11 @@ body {
     line-height: 1.6;
     margin-bottom: 10px;
   }
-  .testo-image{
-  width: 150px;
-  height: 170px;
-}
+
 
   .testimonial-author {
-    font-size: 14px;
-    margin-right: 5px;
+    font-size: 7px;
+    margin-right: 2px;
   }
 }
 /* ========== Delivery Partner Section ========== */
